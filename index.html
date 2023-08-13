@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Sales</title>
+</head>
+
+<body>
+  <img src="bg.jpg" alt="Showroom" class="bg">
+  <nav class="navbar ">
+
+    <ul class="leftnav">
+
+      <div class="logo"><img
+          src="logo.jpg"
+          alt="logo" >
+      </div>
+      
+      <li class="home">Home</li>
+      <form action="http://localhost/dashboard/phpinfo.php" class="sysinfo">
+        <button class="logout">Sysinfo</button>
+      </form>
+      <form action="http://localhost/aa/salesinfo.php" class="sales">
+        <button class="logout">Sales</button>
+      </form>
+      <form action="transparent login form/index.html" class="logoutf">
+        <button class="logout">Logout</button>
+      </form>
+      <form action="../index2.html" class="logoutf">
+        <button class="logout">Employee Details</button>
+      </form>
+      
+      <!-- <li class="services">Services</li> -->
+      <!-- <li class="contact">Contact</li> -->
+      <form action="http://localhost/phpmyadmin/" class="phpmyadmin">
+        <button class="logout">PHPMyAdmin</button>
+      </form>
+
+    </ul>
+
+    <div class="rightnav">
+      <input type="text" name="search" id="search">
+      <button class="btn1">Search</button>
+    </div>
+
+  </nav>
+
+  <section class="container ">
+    <h1 class="heading">
+      Sales Online Portal
+    </h1>
+
+    <p class="para">
+      Enter the details of the Purchase
+    </p>
+
+    <form action="http://localhost/aa/index.php" method="POST">
+
+      <input type="text" placeholder="Enter Customer ID" name="cid" id="cid">
+      <input type="text" placeholder="Enter Car model" name="model" id="model">
+      <input type="text" placeholder="Enter Gear configuration" name="gear" id="gear">
+      <input type="text" placeholder="Enter price" name="price" id="price">
+      <textarea name="payment" id="payment" cols="30" rows="7" placeholder="Enter payment details"></textarea>
+
+      <button class="btn2">Submit</button>
+      <!-- <button class="btn">Reset</button> -->
+    </form>
+  </section>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</body>
+
+</html>

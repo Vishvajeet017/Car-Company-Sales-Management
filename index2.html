@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Model Details</title>
+</head>
+
+<body>
+  <img src="bg.jpg" alt="Showroom" class="bg">
+  <nav class="navbar ">
+
+    <ul class="leftnav">
+
+      <div class="logo"><img
+          src="logo.jpg"
+          alt="logo" >
+      </div>
+      
+      <li class="home">Home</li>
+      <form action="http://localhost/dashboard/phpinfo.php" class="sysinfo">
+        <button class="logout">Sysinfo</button>
+      </form>
+      <form action="http://localhost/aa/salesinfo.php" class="sales">
+        <button class="logout">Sales</button>
+      </form>
+      <form action="transparent login form/index.html" class="logoutf">
+        <button class="logout">Logout</button>
+      </form>
+      <form action="../cwh/index2.html" class="empdetails">
+        <button class="logout">Employee Details</button>
+      </form>
+      
+      <!-- <li class="services">Services</li> -->
+      <!-- <li class="contact">Contact</li> -->
+      <form action="http://localhost/phpmyadmin/" class="phpmyadmin">
+        <button class="logout">PHPMyAdmin</button>
+      </form>
+
+    </ul>
+
+    <div class="rightnav">
+      <input type="text" name="search" id="search">
+      <button class="btn1">Search</button>
+    </div>
+
+  </nav>
+
+  <section class="container ">
+    <h1 class="heading">
+      Employee Details Portal
+    </h1>
+
+    <p class="para">
+      Enter the details of the Employee
+    </p>
+
+    <form action="http://localhost/aa/index2.php" method="POST">
+
+      <input type="text" placeholder="Enter Employee ID" name="Eid" id="Eid">
+      <input type="text" placeholder="Enter Employee Name" name="Ename" id="Ename">
+      <input type="text" placeholder="Enter the age of Employee" name="Eage" id="Eage">
+      <input type="text" placeholder="Enter salary " name="Esalary" id="Esalary">
+      <textarea name="Other detailes" id="Other details" cols="30" rows="7" placeholder="Enter other details"></textarea>
+
+      <button class="btn2">Submit</button>
+      <!-- <button class="btn">Reset</button> -->
+    </form>
+  </section>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</body>
+
+</html>
